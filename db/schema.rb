@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20171023071357) do
   enable_extension "plpgsql"
 
   create_table "students", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.date "birth_date"
+    t.string "name", null: false
+    t.string "email", null: false
+    t.date "birth_date", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
